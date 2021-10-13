@@ -9,3 +9,22 @@
 .row--payment-methods {
   padding-top: 16px;
 }
+
+
+.footerLayout{
+  background-color: #dd3333;
+}
+.footerLayout :global(.vtex-menu-2-x-accordionIcon),
+.footerLayout :global(.vtex-menu-2-x-styledLinkContent),
+.footerLayout :global(.vtex-rich-text-0-x-paragraph){
+  color: #fff;
+}
+
+
+.socialNetworkLink--social-footer{
+  background: #fff;
+      width: 45px;
+      height: 45px;
+      padding: 1px;
+      border-radius: 99999px;
+}

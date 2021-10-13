@@ -9,24 +9,26 @@
       "rich-text#shelf-title",
       "flex-layout.row#shelf",
       "info-card#home",
-      "rich-text#question",
-      "rich-text#link",
-      "newsletter"
+      "info-card#home2",
+      "flex-layout.row#franq"
+      // "newsletter"
     ]
   },
-
   "list-context.image-list#demo": {
-    "children": ["slider-layout#demo-images"],
+    "children": [
+      "slider-layout#demo-images"
+    ],
     "props": {
-      "height": 720,
+      "height": 700,
       "images": [
         {
-          "image": "https://storecomponents.vteximg.com.br/arquivos/banner-principal.png",
-          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+          "image": "assets/image/banner_0_losperritos.jpg"
         },
         {
-          "image": "https://storecomponents.vteximg.com.br/arquivos/banner.jpg",
-          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+          "image": "assets/image/banner_02_losperritos.jpg"
+        },
+        {
+          "image": "assets/image/banner_05_pizza.jpg"
         }
       ]
     }
@@ -43,19 +45,24 @@
       "blockClass": "carousel"
     }
   },
-
   "rich-text#shelf-title": {
     "props": {
-      "text": "## Summer",
+      "text": "# Deliciosos productos",
       "blockClass": "shelfTitle"
     }
   },
   "flex-layout.row#shelf": {
-    "children": ["list-context.product-list#demo1"]
+    "children": [
+      "list-context.product-list#demo1"
+    ]
   },
   "list-context.product-list#demo1": {
-    "blocks": ["product-summary.shelf"],
-    "children": ["slider-layout#demo-products"],
+    "blocks": [
+      "product-summary.shelf"
+    ],
+    "children": [
+      "slider-layout#demo-products"
+    ],
     "props": {
       "orderBy": "OrderByTopSaleDESC"
     }
@@ -72,31 +79,63 @@
       "blockClass": "shelf"
     }
   },
-
   "info-card#home": {
     "props": {
       "id": "info-card-home",
       "isFullModeStyle": false,
       "textPosition": "left",
-      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
-      "headline": "Clearance Sale",
-      "callToActionText": "DISCOVER",
-      "callToActionUrl": "/sale/d",
+      "imageUrl": "assets/image/perroscalientes_losperritoscr.jpg",
+      "headline": "",
+      "subhead": "• Pan Calientito (siempre fresco).\n <br><br> • Salchicha Zenú.\n <br><br> • Ensalada premium (de la casa).\n <br><br> • Queso  «Quesudos de verdad»\n <br><br> • Papa triturada.\n <br><br> • Salsas a tu gusto (de la casa).\n <br><br> • Tocineta ahumada.\n <br><br> • Guacamole, Tártara, Cebolla Caramelizada (de la casa).",
+      "callToActionText": "COMPRAR",
+      "callToActionUrl": "/perro-salvaje/p",
       "blockClass": "info-card-home",
       "textAlignment": "center"
     }
   },
-
+  "info-card#home2": {
+    "props": {
+      "id": "info-card-home",
+      "isFullModeStyle": false,
+      "textPosition": "right",
+      "imageUrl": "assets/image/hamburguesas_losperritoscr.jpg",
+      "headline": "",
+      "subhead": "• Pan Calientito (siempre fresco).\n<br><br> • Tomate.\n<br><br> • Carne Hamburguesa.\n<br><br> • Ensalada (de la casa).\n<br><br> • Queso Derretido.\n<br><br> •  Tocineta ahumada.\n<br><br> • Salsas a tu gusto (de la casa).\n<br><br> • Guacamole, Tártara, Cebolla Caramelizada (de la casa).",
+      "callToActionText": "COMPRAR",
+      "callToActionUrl": "/hamburguesa/p",
+      "blockClass": "info-card-home",
+      "textAlignment": "center"
+    }
+  },
+  "flex-layout.row#franq": {
+    "props": {
+      "blockClass": "franq",
+      "colSizing": "auto"
+    },
+    "children": [
+      "flex-layout.col#franq1",
+      "flex-layout.col#franq2"
+    ]
+  },
+  "flex-layout.col#franq1": {
+    "children": [
+      "rich-text#question"
+    ]
+  },
+  "flex-layout.col#franq2": {
+    "children": [
+      "rich-text#link"
+    ]
+  },
   "rich-text#question": {
     "props": {
-      "text": "**This is an example store built using the VTEX platform.\nWant to know more?**",
+      "text": "# **CONTÁCTENOS.**\n #### Quieres ser parte de nuestra familia!",
       "blockClass": "question"
     }
   },
-
   "rich-text#link": {
     "props": {
-      "text": "\n**Reach us at**\nwww.vtex.com.br",
+      "text": "\n**ADQUIERA UNA**\nFRANQUICIA",
       "blockClass": "link"
     }
   }

@@ -41,8 +41,9 @@
   font-size: 14px;
 }
 .flexRow--deals {
-  background-color: #a7afbd;
+  background-color: #fbaa01;
   padding: 14px 0px;
+  margin-top: 0;
 }
 
 .flexRow--deals .stretchChildrenWidth {
@@ -91,4 +92,25 @@
 
 .flexRow--addToCartRow {
   padding-bottom: 1rem;
+}
+
+.flexRow--menu-row{
+  max-width: 1300px;
+    margin: auto;
+}
+
+.flexRow--credits{
+  background-color: #211611;
+}
+.flexRowContent--credits{
+  max-width: 1300px;
+    margin: auto;
+}
+
+.flexRowContent--franq{
+  position: relative;
+}
+
+.flexRowContent--franq :global(.vtex-flex-layout-0-x-stretchChildrenWidth):first-child{
+  width: 100% !important;
 }
