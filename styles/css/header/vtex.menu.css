@@ -1,0 +1,10 @@
+.styledLinkContent {
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 1.1em;
+  text-transform: uppercase;
+}
+.styledLinkContent--submenu {
+  color: #444;
+}

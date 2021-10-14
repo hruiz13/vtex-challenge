@@ -94,23 +94,24 @@
   padding-bottom: 1rem;
 }
 
-.flexRow--menu-row{
+.flexRow--menu-row {
   max-width: 1300px;
-    margin: auto;
+  margin: auto;
 }
 
-.flexRow--credits{
+.flexRow--credits {
   background-color: #211611;
 }
-.flexRowContent--credits{
+.flexRowContent--credits {
   max-width: 1300px;
-    margin: auto;
+  margin: auto;
 }
 
-.flexRowContent--franq{
+.flexRowContent--franq {
   position: relative;
 }
 
-.flexRowContent--franq :global(.vtex-flex-layout-0-x-stretchChildrenWidth):first-child{
+.flexRowContent--franq
+  :global(.vtex-flex-layout-0-x-stretchChildrenWidth):first-child {
   width: 100% !important;
 }

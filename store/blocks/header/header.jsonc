@@ -8,7 +8,6 @@
   "header-layout.desktop": {
     "children": [
       "flex-layout.row#1-desktop",
-      "flex-layout.row#2-desktop",
       "flex-layout.row#3-desktop",
       "sticky-layout#4-desktop"
     ]
@@ -22,7 +21,7 @@
   },
 
   "flex-layout.row#2-desktop": {
-    "children": ["notification.bar#home"],
+    "children": [],
     "props": {
       "fullWidth": "true"
     }
@@ -90,10 +89,11 @@
   },
   "logo#desktop": {
     "props": {
+      "blockClass": "logo-desktop",
       "title": "Logo",
       "href": "/",
-      "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo.png",
-      "width": "180"
+      "url": "assets/image/logo-web-los-perritos.png",
+      "width": "80"
     }
   },
   "header-layout.mobile": {

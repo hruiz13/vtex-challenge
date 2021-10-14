@@ -107,6 +107,20 @@
       "textAlignment": "center"
     }
   },
+  "info-card#home3": {
+    "props": {
+      "id": "info-card-home",
+      "isFullModeStyle": false,
+      "textPosition": "right",
+      "imageUrl": "assets/image/png-clipart-pizza-pizza.png",
+      "headline": "",
+      "subhead": "• Masa tradicional crocante.\n<br><br> • Sabores exclusivos.\n<br><br> • Borde de queso (opcional).\n<br><br> • Salsas (de la casa).\n<br><br> • Queso Derretido.\n<br><br> •  Sabor tradicional.\n<br><br> • Perfecta con amigos.\n<br><br> • Adiciones a tu gusto.",
+      "callToActionText": "COMPRAR",
+      "callToActionUrl": "/pizza/p",
+      "blockClass": "info-card-home",
+      "textAlignment": "center"
+    }
+  },
   "flex-layout.row#franq": {
     "props": {
       "blockClass": "franq",

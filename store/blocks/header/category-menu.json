@@ -6,7 +6,8 @@
     "children": [
       "menu-item#category-apparel",
       "menu-item#category-home",
-      "menu-item#more"
+      "menu-item#more",
+      "menu-item#hamburguesa"
     ]
   },
   "menu-item#category-apparel": {
@@ -17,10 +18,10 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/apparel---accessories/",
+        "href": "/hamburguesas/patacones/perros-calientes/pizzas?initialMap=c&initialQuery=hamburguesas&map=category-1,category-1,category-1,category-1",
         "noFollow": false,
         "tagTitle": "Apparel & Accessories",
-        "text": "Apparel & Accessories"
+        "text": "Comidas"
       }
     },
     "blocks": [
@@ -47,46 +48,49 @@
   },
   "menu-item#category-apparel-clothing": {
     "props": {
+      "blockClass": "submenu",
       "id": "menu-item-category-apparel-clothing",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/apparel---accessories/clothing/",
+        "href": "/perro-salvaje/p",
         "noFollow": false,
-        "tagTitle": "Clothing",
-        "text": "Clothing"
+        "tagTitle": "Perro Caliente",
+        "text": "Perro Caliente"
       }
     }
   },
   "menu-item#category-apparel-accessories": {
     "props": {
+      "blockClass": "submenu",
       "id": "menu-item-category-apparel-accessories",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/apparel---accessories/accessories/",
+        "href": "/patacones/p/",
         "noFollow": false,
-        "tagTitle": "Accessories",
-        "text": "Accessories"
+        "tagTitle": "Patacón",
+        "text": "Patacón"
       }
     }
   },
   "menu-item#category-apparel-eyeglasses": {
     "props": {
+      "blockClass": "submenu",
       "id": "menu-item-category-apparel-eyeglasses",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/apparel---accessories/eyeglasses/",
+        "href": "/hamburguesa/p",
         "noFollow": false,
-        "tagTitle": "Eyeglasses",
-        "text": "Eyeglasses"
+        "tagTitle": "Hamburguesas",
+        "text": "Hamburguesas"
       }
     }
   },
@@ -98,12 +102,32 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/home---decor/",
+        "href": "/pizzas",
         "noFollow": false,
-        "tagTitle": "Home & Decor",
-        "text": "Home & Decor"
+        "tagTitle": "Pizzas",
+        "text": "Pizzas"
       }
-    }
+    },"blocks": [
+      "vtex.menu@2.x:submenu#pizzas"
+    ]
+  },
+  "vtex.menu@2.x:submenu#pizzas": {
+    "props": {
+      "width": "100%"
+    },
+    "children": [
+      "flex-layout.row#menu-pizzas"
+    ]
+  },
+  "flex-layout.row#menu-pizzas": {
+    "children": [
+      "flex-layout.col#menu-pizzas-2"
+    ]
+  },
+  "flex-layout.col#menu-pizzas-2": {
+    "children": [
+      "info-card#home3"
+    ]
   },
   "menu-item#more": {
     "props": {
@@ -115,8 +139,8 @@
         "type": "internal",
         "href": "#",
         "noFollow": true,
-        "tagTitle": "More",
-        "text": "More"
+        "tagTitle": "Perros",
+        "text": "Perros"
       }
     },
     "blocks": [
@@ -133,13 +157,7 @@
   },
   "flex-layout.row#menu-more": {
     "children": [
-      "flex-layout.col#menu-more-1",
       "flex-layout.col#menu-more-2"
-    ]
-  },
-  "flex-layout.col#menu-more-1": {
-    "children": [
-      "vtex.menu@2.x:menu#more"
     ]
   },
   "flex-layout.col#menu-more-2": {
@@ -147,58 +165,40 @@
       "info-card#home"
     ]
   },
-  "vtex.menu@2.x:menu#more": {
+  "menu-item#hamburguesa": {
     "props": {
-      "orientation": "vertical"
+      "id": "menu-item-custom-sale",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Hamburguesas",
+        "text": "Hamburguesas"
+      }
     },
-    "children": [
-      "menu-item#about-us",
-      "menu-item#faq"
+    "blocks": [
+      "vtex.menu@2.x:submenu#hamburguesa"
     ]
   },
-  "menu-item#about-us": {
+  "vtex.menu@2.x:submenu#hamburguesa": {
     "props": {
-      "id": "menu-item-about-us",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/about-us",
-        "noFollow": true,
-        "tagTitle": "About us",
-        "text": "About us"
-      }
-    }
+      "width": "100%"
+    },
+    "children": [
+      "flex-layout.row#menu-hamburguesa"
+    ]
   },
-  "menu-item#faq": {
-    "props": {
-      "id": "menu-item-faq",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/faq",
-        "noFollow": true,
-        "tagTitle": "FAQ",
-        "text": "FAQ"
-      }
-    }
+  "flex-layout.row#menu-hamburguesa": {
+    "children": [
+      "flex-layout.col#menu-hamburguesa-2"
+    ]
   },
-  "menu-item#contact-us": {
-    "props": {
-      "id": "menu-item-contact-us",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/contact-us",
-        "noFollow": true,
-        "tagTitle": "Contact Us",
-        "text": "Contact Us"
-      }
-    }
+  "flex-layout.col#menu-hamburguesa-2": {
+    "children": [
+      "info-card#home2"
+    ]
   }
 }
