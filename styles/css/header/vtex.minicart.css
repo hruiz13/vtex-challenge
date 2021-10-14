@@ -1,3 +1,6 @@
 .minicartIconContainer {
   color: #fff;
 }
+.openIconContainer :global(.vtex-button) {
+  background-color: transparent;
+}

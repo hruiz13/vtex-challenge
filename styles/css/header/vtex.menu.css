@@ -1,3 +1,6 @@
+.styledLinkContainer {
+  position: relative;
+}
 .styledLinkContent {
   color: #fff;
   font-weight: 700;
@@ -5,6 +8,87 @@
   font-size: 1.1em;
   text-transform: uppercase;
 }
+.styledLinkContent:hover::after {
+  position: absolute;
+  bottom: 10px;
+  display: flex;
+  content: "";
+  width: 80%;
+  height: 3px;
+  /* bottom: -5px; */
+  left: -webkit-calc(50% - 40%);
+  left: -moz-calc(50% - 40%);
+  /* left: calc(50% - 35%); */
+  background-color: #dd3333;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  align-items: center;
+  justify-content: center;
+}
+.styledLinkContent::after {
+  position: absolute;
+  bottom: -5px;
+  display: none;
+  content: "";
+  width: 70%;
+  height: 5px;
+  /* bottom: -5px; */
+  left: -webkit-calc(50% - 35%);
+  left: -moz-calc(50% - 35%);
+  /* left: calc(50% - 35%); */
+  background-color: #dd3333;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  align-items: center;
+  justify-content: center;
+}
 .styledLinkContent--submenu {
   color: #444;
+}
+.styledLinkContent--submenu:hover::after {
+  position: absolute;
+  bottom: 0px;
+  display: flex;
+  content: "";
+  width: 80%;
+  height: 3px;
+  /* bottom: -5px; */
+  left: 0;
+  /* left: calc(50% - 35%); */
+  background-color: #dd3333;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  align-items: center;
+  justify-content: center;
+}
+.styledLinkContent--submenu::after {
+  position: absolute;
+  bottom: -5px;
+  display: none;
+  content: "";
+  width: 70%;
+  height: 5px;
+  /* bottom: -5px; */
+  left: -webkit-calc(50% - 35%);
+  left: -moz-calc(50% - 35%);
+  /* left: calc(50% - 35%); */
+  background-color: #dd3333;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  align-items: center;
+  justify-content: center;
+}
+.styledLinkContent--domicilios:hover::after {
+  display: none;
+}
+.submenuWrapper--isOpen {
+  margin-top: 20px;
 }

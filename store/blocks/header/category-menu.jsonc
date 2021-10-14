@@ -20,12 +20,11 @@
         "type": "internal",
         "href": "/hamburguesas/patacones/perros-calientes/pizzas?initialMap=c&initialQuery=hamburguesas&map=category-1,category-1,category-1,category-1",
         "noFollow": false,
-        "tagTitle": "Apparel & Accessories",
         "text": "Comidas"
       }
     },
     "blocks": [
-      "vtex.menu@2.x:submenu#category-apparel"
+      /* "vtex.menu@2.x:submenu#category-apparel" */
     ]
   },
   "vtex.menu@2.x:submenu#category-apparel": {
@@ -57,7 +56,6 @@
         "type": "internal",
         "href": "/perro-salvaje/p",
         "noFollow": false,
-        "tagTitle": "Perro Caliente",
         "text": "Perro Caliente"
       }
     }
@@ -73,7 +71,6 @@
         "type": "internal",
         "href": "/patacones/p/",
         "noFollow": false,
-        "tagTitle": "Patacón",
         "text": "Patacón"
       }
     }
@@ -89,7 +86,6 @@
         "type": "internal",
         "href": "/hamburguesa/p",
         "noFollow": false,
-        "tagTitle": "Hamburguesas",
         "text": "Hamburguesas"
       }
     }
@@ -104,7 +100,6 @@
         "type": "internal",
         "href": "/pizzas",
         "noFollow": false,
-        "tagTitle": "Pizzas",
         "text": "Pizzas"
       }
     },"blocks": [
@@ -139,7 +134,6 @@
         "type": "internal",
         "href": "#",
         "noFollow": true,
-        "tagTitle": "Perros",
         "text": "Perros"
       }
     },
@@ -175,7 +169,6 @@
         "type": "internal",
         "href": "#",
         "noFollow": true,
-        "tagTitle": "Hamburguesas",
         "text": "Hamburguesas"
       }
     },

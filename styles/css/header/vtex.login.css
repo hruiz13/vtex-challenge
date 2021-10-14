@@ -4,3 +4,47 @@
   letter-spacing: 1px;
   text-transform: uppercase;
 }
+.container {
+  position: relative;
+}
+.container :global(.vtex-button) {
+  background-color: transparent;
+}
+.container :global(.vtex-button):hover::after {
+  position: absolute;
+  bottom: 5px;
+  display: flex;
+  content: "";
+  width: 60%;
+  height: 3px;
+  /* bottom: -5px; */
+  left: -webkit-calc(50% - 27%);
+  left: -moz-calc(50% - 27%);
+  /* left: calc(50% - 35%); */
+  background-color: #dd3333;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  align-items: center;
+  justify-content: center;
+}
+.container :global(.vtex-button)::after {
+  position: absolute;
+  bottom: -5px;
+  display: none;
+  content: "";
+  width: 70%;
+  height: 5px;
+  /* bottom: -5px; */
+  left: -webkit-calc(50% - 35%);
+  left: -moz-calc(50% - 35%);
+  /* left: calc(50% - 35%); */
+  background-color: #dd3333;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  align-items: center;
+  justify-content: center;
+}

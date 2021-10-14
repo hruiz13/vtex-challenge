@@ -6,16 +6,16 @@
   },
   "menu-item#shop": {
     "props": {
+      "blockClass": "domicilios",
       "id": "menu-item-shop",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/pizzas",
+        "href": "#",
         "noFollow": false,
-        "tagTitle": "Pizzas",
-        "text": "Pizzas"
+        "text": "Los mejores de Colombia"
       }
     }
   },
@@ -26,6 +26,7 @@
   },
   "menu-item#vtex-website": {
     "props": {
+      "blockClass": "domicilios",
       "id": "menu-item-vtex-website",
       "type": "custom",
       "iconId": null,
@@ -34,7 +35,6 @@
         "type": "external",
         "href": "#",
         "noFollow": false,
-        "tagTitle": "Domicilio",
         "text": "Domicilios - 5647893"
       }
     }
